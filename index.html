@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="encriptador.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <img class="alura" src="./assets/alura.png" alt="Foto de Icono de Alura Latam">
+    </header>
+
+    <main class="presentacion">
+        <section class="presentacion__izq">
+            <textarea class="presentacion__izq__txtarea" cols="30" rows="10" id="texto" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="presentacion__izq__anuncio">
+                <h6 class="presentacion__izq__anuncio__aviso"><img class="presentacion__izq__anuncio__img" src="./assets/cir_ex.png" alt="Foto de Icono de Aviso"> 
+                       Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="presentacion__izq__botones">
+                <button class="btn__encriptar" onclick="encryptText()">Encriptar</button>
+                <button class="btn__desencriptar" onclick="decryptText()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="presentacion__der">
+            <div class="presentacion__der__txt">
+                <img class="presentacion__der__img" id="img" src="./assets/desen.png" alt=""/>
+                <h2 class="presentacion__der__tit" id="tit">Ningún mensaje fue encontrado</h2>
+                <p class="presentacion__der__par" id="msj">Ingresa el texto que desees encriptar o desencriptar.</p>         
+            </div>
+
+            <div class="presentacion__der__botones">
+                <button class="btn__copiar" id="copiar" onclick="copyElement()" disabled>Copiar</button>
+            </div>
+
+            <textarea class="presentacion__der__txtfondo"></textarea>
+            
+            <textarea class="presentacion__der__txtdesencr" cols="30" rows="10" id="salida" hidden></textarea>
+
+        </section>v
+    </main>
+
+    <footer class="Elioth">
+        <p>Desarrollado por Pérez Vázquez Brandon Elioth</p>
+    </footer>
+
+</body>
+</html>
